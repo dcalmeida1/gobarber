@@ -32,7 +32,7 @@ class ScheduleController {
       order: ['date'],
     });
 
-    return res.json({ date });
+    return res.json(appointments);
   }
 }
 
