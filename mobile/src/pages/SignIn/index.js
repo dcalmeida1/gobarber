@@ -24,7 +24,6 @@ export default function SignIn({ navigation }) {
   const [password, setPassword] = useState('');
 
   function handleSubmit() {
-    alert('ok');
     dispatch(signInRequest(email, password));
   }
 
@@ -54,13 +53,7 @@ export default function SignIn({ navigation }) {
             value={password}
             onChangeText={setPassword}
           />
-          <SubmitButton
-            onPress={() => {
-              alert('ok');
-            }}
-          >
-            Acessar
-          </SubmitButton>
+          <SubmitButton onPress={handleSubmit}>Acessar</SubmitButton>
         </Form>
         <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText>Criar conta gratuita </SignLinkText>
