@@ -51,9 +51,9 @@ export default function Dashboard() {
   );
 }
 
-Dashboard.navigationOptions = {
-  tabBarLabel: 'Agendamentos',
-  tabBarIcons: ({ tintColor }) => (
-    <Icon name="event" size={20} color={tintColor} />
-  ),
-};
+// Dashboard.navigationOptions = {
+//   tabBarLabel: 'Agendamentos',
+//   tabBarIcons: ({ tintColor }) => (
+//     <Icon name="event" size={20} color={tintColor} />
+//   ),
+// };
